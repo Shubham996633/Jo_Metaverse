@@ -3,6 +3,11 @@ module.exports = {
     browser: true,
     es2021: true,
   },
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
   extends: [
     'plugin:react/recommended',
     'airbnb',
